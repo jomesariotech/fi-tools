@@ -1,10 +1,9 @@
 import app from "./app";
+import { env } from "./config/env";
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-    console.log("==================================");
-    console.log("🚀 Fi Tools");
-    console.log(`🌐 Listening on port ${PORT}`);
-    console.log("==================================");
+app.listen(env.port, () => {
+  console.log("==================================");
+  console.log("🚀 Fi Tools");
+  console.log(`🌐 Listening on port ${env.port}`);
+  console.log("==================================");
 });
